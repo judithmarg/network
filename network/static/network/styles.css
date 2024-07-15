@@ -1,7 +1,16 @@
 :root {
     margin: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .navbar {
     background-color: aqua;
+}
+
+.textareaStyle{
+    background-color: rgb(255, 224, 236);
+    width: 95vw;
+    font-size: small;
+    padding: 10px;
+    
 }

@@ -1,5 +1,14 @@
 {% extends "network/layout.html" %}
 
 {% block body %}
-    holita
+    <div>
+        <form action="{% url 'posting' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <h5>New Post</h5>
+                <textarea name="post" placeholder="You should post something" class="textareaStyle"></textarea>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Post">
+        </form>
+    </div>
 {% endblock %}

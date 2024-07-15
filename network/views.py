@@ -61,3 +61,17 @@ def register(request):
         return HttpResponseRedirect(reverse("index"))
     else:
         return render(request, "network/register.html")
+
+def posting(request):
+    if request.method == 'POST':
+        newPost = request.POST["post"]
+        if newPost is not "":
+            postDatabase(newPost)
+            return HttpResponseRedirect(reverse("index"))
+        else:
+            return HttpResponseRedirect(reverse("index"))
+    else:
+        return render(request, "network/register.html")
+    
+def postDatabase(newpost):
+    return print(1+1)
